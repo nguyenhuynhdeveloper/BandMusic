@@ -1,0 +1,94 @@
+
+/* PC && Tablet */
+@media (max-width :1023px) {
+   .btn{
+    padding: 15px 16px;
+   }
+   .form-control {
+       padding :15px;
+   }
+  
+   .social-list {
+       font-size: 48px;
+       margin-top: 0 8px;
+   }
+   #footer .copyright a{
+       padding :12px 0;
+       display: inline-block;  /*Padding ở phía trên làm nó dày lên rồi nhưng chưa đẩy dòng xuống nên phải cho display : inline-block cho nó đẩy xuống*/
+   }
+}
+ 
+@media (min-width: 740px) and (max-width :1023px) {
+    .contact-info{
+        line-height: 2;
+    }
+}
+/* Mobile */
+
+@media (max-width :739px) {
+.s-full-width {
+    width: 100%;
+}
+
+    .s-col-full{
+        width :100% !important;
+    }
+.s-mt-8{
+    margin-top: 8px;
+}
+    #header {
+        overflow: hidden;
+         height: 46px;
+    }
+    #header .mobile-menu-btn {
+        display: block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+    #nav {
+        display: block;
+    } 
+
+    #nav>li {
+        display: block;
+    }
+     #nav .subnav{
+        position :initial; /*Để hiện menu cấp 2 của more trên mobile thì k cần absolute
+        Nó cũng nhận thuộc tính overflow : hidden của  thẻ header nhưng nó vẫn là thẻ con của thẻ header nên nó hiện bt 
+        */
+        background-color: #333;
+     }
+      
+     #nav .subnav a{
+         color: #fff;
+         padding :5px 41px;  /*Chiều cao trên mobile tối thiểu là 42- 48 px ngón tay mới dễ dàng thao tác*/
+     }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    #nav li a {
+        display: block;
+        
+    }
+    #content .member-list {
+        width: 100%;
+        max-width: 740px; /* Đặt kích thước tối đa là 740px co lại thì sẽ là 100% chiều ngang màn hình*/
+    }
+   #content .member-item.member-mobile{ /* Để cho 3 cái ảnh đẩy xuống theo chiều dọc , vì kể cả có thuộc tính float: left nhưng k đủ chiều ngang thì element vẫn bị đẩy xuống*/
+        width: 100%;
+        max-width: 740px;
+        margin-top: 30px;
+        float: none;
+    }
+    #content .member-img {
+        width: 60%;
+    }
+    #content .place-item {
+        width: 100%;
+    }
+   
+    .contact-form{
+        margin-top: 32px;
+    }
+}

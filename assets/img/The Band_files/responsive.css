@@ -1,0 +1,23 @@
+/* Mobile */
+
+@media (max-width :740px) {
+    #header {
+        overflow: hidden;
+        height: 46px;
+    }
+    #nav {
+        display: block;
+    }
+    #nav>li {
+        display: block;
+    }
+    #nav li a {
+        display: block;
+    }
+    #header .mobile-menu-btn {
+        display: block;
+    }
+    #header .search-btn {
+        display: none;
+    }
+}
